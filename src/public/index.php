@@ -3,6 +3,8 @@
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
+mb_internal_encoding("UTF-8");
+
 define('LARAVEL_START', microtime(true));
 
 /*

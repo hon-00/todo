@@ -59,7 +59,7 @@
 
     <div class="todo-table">
         <table class="todo-table__inner">
-            <tr class="todo--table__row">
+            <tr class="todo-table__row">
                 <th class="todo-table__header" colspan="2">
                     <span class="todo-table__header-span">Todo</span>
                     <span class="todo-table__header-span">カテゴリ</span>

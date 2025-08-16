@@ -24,7 +24,7 @@ class TodoController extends Controller
 
     public function update(TodoRequest $request){
         $todo = Todo::find($request->id);
-        $todo->update(['content' => $request->content]);
+        $todo->update($request->only(['content']));
 
         return redirect('/')->with('message','Todoを変更しました');
     }

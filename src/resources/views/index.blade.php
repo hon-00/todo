@@ -72,16 +72,16 @@
                         @method('PATCH')
                         @csrf
                         <div class="update-form__item">
-                            <input class="update-form__item-input" type="text" name="content" value="{{$todo->content}}">
-                            <input type="hidden" name="id" value="{{$todo->id}}">
+                            <input class="update-form__item-input" type="text" name="content" value="{{ $todo->content }}">
+                            <input type="hidden" name="id" value="{{ $todo->id }}">
                         </div>
                         <div class="update-form__item">
                             <p class="update-form__item-p">Category 1</p>
                             <!--<select class="update-form__item-select" name="category" value=""></select>-->
                         </div>
                         <div class="update-form__item">
-                            <input class="update-form__item-input" type="text" name="content" value="{{$category->categories}}">
-                            <input type="hidden" name="category__id" value="{{$category->category__id}}">
+                            <input class="update-form__item-input" type="text" name="content" value="{{ $category->categories }}">
+                            <input type="hidden" name="category__id" value="{{ $category->category__id }}">
                         </div>
                         <div class="update-form__button">
                             <button class="update-form__button-submit" type="submit">更新</button>
@@ -93,7 +93,7 @@
                         @method('DELETE')
                         @csrf
                         <div class="delete-form__button">
-                            <input type="hidden" name="id" value="{{$todo->id}}">
+                            <input type="hidden" name="id" value="{{ $todo->id }}">
                             <button class="delete-form__button-submit" type="submit">削除</button>
                         </div>
                     </form>
